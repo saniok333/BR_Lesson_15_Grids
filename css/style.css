@@ -1,0 +1,56 @@
+body {
+  box-sizing: border-box; }
+  body > #container {
+    margin: 10px auto;
+    width: 1200px;
+    display: flex;
+    flex-direction: column; }
+    body > #container > .ba-grid {
+      margin: 0 -10px;
+      display: flex; }
+      body > #container > .ba-grid > div {
+        margin: 10px; }
+    body > #container > .ba-grid:nth-of-type(1) {
+      height: 150px; }
+      body > #container > .ba-grid:nth-of-type(1) > div:nth-of-type(1) {
+        background-color: #afdfbf; }
+      body > #container > .ba-grid:nth-of-type(1) > div:nth-of-type(2) {
+        background-color: #68c5b8; }
+    body > #container > .ba-grid:nth-of-type(2) {
+      height: 320px; }
+      body > #container > .ba-grid:nth-of-type(2) > div:nth-of-type(1) {
+        background-color: #fa688a; }
+      body > #container > .ba-grid:nth-of-type(2) > div:nth-of-type(2) {
+        display: flex;
+        flex-direction: column; }
+        body > #container > .ba-grid:nth-of-type(2) > div:nth-of-type(2) > .ba-grid > div {
+          margin: 0 10px; }
+        body > #container > .ba-grid:nth-of-type(2) > div:nth-of-type(2) > .ba-grid:nth-of-type(1) {
+          height: 165px;
+          margin: 0 -10px 10px;
+          display: flex; }
+          body > #container > .ba-grid:nth-of-type(2) > div:nth-of-type(2) > .ba-grid:nth-of-type(1) > div {
+            background-color: #8a95ef; }
+        body > #container > .ba-grid:nth-of-type(2) > div:nth-of-type(2) > .ba-grid:nth-of-type(2) {
+          height: 150px;
+          margin: 10px -10px 0;
+          display: flex; }
+          body > #container > .ba-grid:nth-of-type(2) > div:nth-of-type(2) > .ba-grid:nth-of-type(2) > div {
+            background-color: #ffc569; }
+    body > #container > .ba-grid:nth-of-type(3) {
+      height: 185px; }
+      body > #container > .ba-grid:nth-of-type(3) > div {
+        background-color: #588cc7; }
+    body > #container > .ba-grid:nth-of-type(4) {
+      height: 135px; }
+      body > #container > .ba-grid:nth-of-type(4) > div {
+        background-color: #6652ad; }
+
+.ba-width-2-12 {
+  width: calc(100% / 12 * 2 - 20px); }
+
+.ba-width-4-12 {
+  width: calc(100% / 12 * 4 - 20px); }
+
+.ba-width-6-12 {
+  width: calc(100% / 12 * 6 - 20px); }

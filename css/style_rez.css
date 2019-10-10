@@ -1,0 +1,71 @@
+body {
+  box-sizing: border-box;
+}
+
+#container {
+  margin: 10px auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
+#container > .ba-grid {
+  height: 150px;
+  margin: 0 -10px;
+  display: flex;
+}
+
+#container > .ba-grid > div {
+  background-color: brown;
+  margin: 10px;
+}
+
+#container > .ba-grid:nth-of-type(2) {
+  height: 320px;
+}
+
+#container > .ba-grid:nth-of-type(2) > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+#container
+  > .ba-grid:nth-of-type(2)
+  > div:nth-of-type(2)
+  > .ba-grid:nth-of-type(1) {
+  height: 165px;
+  margin: 0 -10px 10px;
+  display: flex;
+}
+
+#container
+  > .ba-grid:nth-of-type(2)
+  > div:nth-of-type(2)
+  > .ba-grid:nth-of-type(2) {
+  height: 150px;
+  margin: 10px -10px 0;
+  display: flex;
+}
+
+#container > .ba-grid:nth-of-type(2) > div:nth-of-type(2) > .ba-grid > div {
+  background-color: blue;
+  margin: 0 10px;
+}
+
+#container > .ba-grid:nth-of-type(3) {
+  height: 185px;
+}
+
+#container > .ba-grid:nth-of-type(4) {
+  height: 135px;
+}
+
+.ba-width-6-12 {
+  width: calc(100% / 12 * 6 - 20px);
+}
+.ba-width-4-12 {
+  width: calc(100% / 12 * 4 - 20px);
+}
+.ba-width-2-12 {
+  width: calc(100% / 12 * 2 - 20px);
+}
