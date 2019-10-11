@@ -1,5 +1,7 @@
 @import "./_mixins.scss";
 
+$marg: 10px;
+
 body {
   box-sizing: border-box;
   & > #container {
@@ -8,10 +10,10 @@ body {
     display: flex;
     flex-direction: column;
     & > .ba-grid {
-      margin: 0 -10px;
+      margin: 0 -#{$marg};
       display: flex;
       & > div {
-        margin: 10px;
+        margin: #{$marg};
       }
     }
     & > .ba-grid:nth-of-type(1) {
@@ -33,12 +35,12 @@ body {
         flex-direction: column;
         & > .ba-grid {
           & > div {
-            margin: 0 10px;
+            margin: 0 #{$marg};
           }
         }
         & > .ba-grid:nth-of-type(1) {
           height: 165px;
-          margin: 0 -10px 10px;
+          margin: 0 -#{$marg} #{$marg};
           display: flex;
           & > div {
             background-color: #8a95ef;
@@ -46,7 +48,7 @@ body {
         }
         & > .ba-grid:nth-of-type(2) {
           height: 150px;
-          margin: 10px -10px 0;
+          margin: #{$marg} -#{$marg} 0;
           display: flex;
           & > div {
             background-color: #ffc569;
@@ -71,6 +73,6 @@ body {
 
 @for $i from 1 through 3 {
   .ba-width-#{$i*2}-12 {
-    @include calc-width(#{$i * 2});
+    @include calc-width(#{$i * 2}, #{$marg});
   }
 }

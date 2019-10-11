@@ -47,10 +47,10 @@ body {
         background-color: #6652ad; }
 
 .ba-width-2-12 {
-  width: calc(100% / 12 * 2 - 20px); }
+  width: calc(100% / 12 * 2 - 2 * 10px); }
 
 .ba-width-4-12 {
-  width: calc(100% / 12 * 4 - 20px); }
+  width: calc(100% / 12 * 4 - 2 * 10px); }
 
 .ba-width-6-12 {
-  width: calc(100% / 12 * 6 - 20px); }
+  width: calc(100% / 12 * 6 - 2 * 10px); }
