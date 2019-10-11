@@ -4,67 +4,67 @@ $marg: 10px;
 
 body {
   box-sizing: border-box;
-  & > #container {
+  > #container {
     margin: 10px auto;
     width: 1200px;
     display: flex;
     flex-direction: column;
-    & > .ba-grid {
+    > .ba-grid {
       margin: 0 -#{$marg};
       display: flex;
-      & > div {
+      > div {
         margin: #{$marg};
       }
     }
-    & > .ba-grid:nth-of-type(1) {
+    > .ba-grid:nth-of-type(1) {
       height: 150px;
-      & > div:nth-of-type(1) {
+      > div:nth-of-type(1) {
         background-color: #afdfbf;
       }
-      & > div:nth-of-type(2) {
+      > div:nth-of-type(2) {
         background-color: #68c5b8;
       }
     }
-    & > .ba-grid:nth-of-type(2) {
+    > .ba-grid:nth-of-type(2) {
       height: 320px;
-      & > div:nth-of-type(1) {
+      > div:nth-of-type(1) {
         background-color: #fa688a;
       }
-      & > div:nth-of-type(2) {
+      > div:nth-of-type(2) {
         display: flex;
         flex-direction: column;
-        & > .ba-grid {
-          & > div {
+        > .ba-grid {
+          > div {
             margin: 0 #{$marg};
           }
         }
-        & > .ba-grid:nth-of-type(1) {
+        > .ba-grid:nth-of-type(1) {
           height: 165px;
           margin: 0 -#{$marg} #{$marg};
           display: flex;
-          & > div {
+          > div {
             background-color: #8a95ef;
           }
         }
-        & > .ba-grid:nth-of-type(2) {
+        > .ba-grid:nth-of-type(2) {
           height: 150px;
           margin: #{$marg} -#{$marg} 0;
           display: flex;
-          & > div {
+          > div {
             background-color: #ffc569;
           }
         }
       }
     }
-    & > .ba-grid:nth-of-type(3) {
+    > .ba-grid:nth-of-type(3) {
       height: 185px;
-      & > div {
+      > div {
         background-color: #588cc7;
       }
     }
-    & > .ba-grid:nth-of-type(4) {
+    > .ba-grid:nth-of-type(4) {
       height: 135px;
-      & > div {
+      > div {
         background-color: #6652ad;
       }
     }
